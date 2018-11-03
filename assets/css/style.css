@@ -79,6 +79,7 @@ body {
   nav {
     float: right;
     margin-top: 25px;
+    
   }
   
   nav a {
@@ -216,45 +217,30 @@ body {
   }
 
 
-@media only screen 
-and (max-width: 640px) {
-        .header {position: static; }
-
-        #masthead {
-            position: relative;
-            margin-bottom: -100px;
-            text-align: center;
-            float: none;
-            width: 100%;
-        }
-
-        .body {width: 100%;}
-
-        p {font-size: 14px;
-            line-height: 26px;
-        }
-
-        .nav {
-            text-align: center;
-            width: 100%;
-            margin: 0 auto;
-        }
-        .nav a {
-            text-align: center;
-            width: 100%;
-            float: none;
-            margin: 0 auto;
-        }
-        
-        
-        #main-container {
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 15px;
-        }
+  @media only screen 
+  and (max-width: 980px) {
+    .body {
+        width: 100%;
+        max-width: 980px;
+  }      
+    #main-container {
+        padding-left: 15px;
+        padding-top: 115px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+    #masthead {
+        position: relative;
+        margin-bottom: -100px;
+        text-align: center;
+        width: 100%;
+        z-index: 0;
+        padding-right: 20px;
+    }
+   
   }
 
-@media only screen 
+  @media only screen 
   and (max-width: 768px) {
         #main-container {
             padding-left: 15px;
@@ -262,15 +248,87 @@ and (max-width: 640px) {
             padding-right: 15px;
             padding-bottom: 15px;
         }
+        .body {width: 100%;
+        max-width: 768px;}
+
+        #masthead {
+            position: relative;
+            margin-bottom: -100px;
+            text-align: center;
+            width: 100%;
+            z-index: 0;
+            padding-right: 20px;
+        }
 }
 
 @media only screen 
-  and (max-width: 980px) {
-    .body {width: 100% }      
-    #main-container {
-        padding-left: 15px;
-        padding-top: 115px;
-        padding-right: 15px;
-        padding-bottom: 15px;
+and (max-width: 640px) {
+    nav {
+        max-width: 640px;
+        width: 100%;
+        float: none !important;
+        margin-top: 0px; 
+        padding-right: 50px;
+           }
+
+  .main-section {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+    
+    .auth-image {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
     }
-}
+
+    .work {
+        width: 100%;
+        max-width: 640px;
+        
+    }
+        header {
+            position: static;
+            width: 100%;
+            max-width: 640px;
+        }
+
+        #masthead {
+            position: relative;
+            margin-bottom: -100px;
+            text-align: center;
+            width: 100%;
+            max-width: 640px;
+            z-index: 0;
+            padding-right: 0px;
+            padding-bottom: 20px;
+        }
+        
+        #logo {
+            width: 100%;
+            max-width: 640px;
+            float: right;
+            margin-bottom: 20px;
+        }
+        
+        
+        body {width: 100%;
+        max-width: 640px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        #main-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+        }
+  }
+
+ 
+
