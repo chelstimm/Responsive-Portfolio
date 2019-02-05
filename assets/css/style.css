@@ -1,3 +1,11 @@
+body.scrolled #main-menu {
+  opacity: 0.2;
+  transition: opacity .2s;
+}
+body.scrolled #main-menu:hover {
+  opacity: 1.0;
+  transition: opacity .2s;
+}
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
@@ -51,7 +59,7 @@ body {
   
   /* header */
   
-  #masthead {
+  #main-menu {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -135,10 +143,31 @@ body {
     max-width: 960px;
     padding: 30px;
     margin: 0 0 40px;
+    margin-top: 45px;
     background: #ffffff;
-    border: 1px solid #dddddd;
   }
-  
+
+  .img-break {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 150px;
+    z-index: -1;
+
+  }
+
+  .img-break2 {
+    position: absolute;
+    top: 1300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 150px;
+    z-index: -1;
+
+  }
   /* portfolio page */
   
   .work {
